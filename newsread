@@ -13,11 +13,11 @@ def speak(audio):
 
 def latestnews():
     api_dict = {
-            "entertainment":"https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=ae32cd575a9141edbeb5fe520d452924",
-            "health" : "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=ae32cd575a9141edbeb5fe520d452924",
-            "science" :"https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=ae32cd575a9141edbeb5fe520d452924",
-            "sports" :"https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=ae32cd575a9141edbeb5fe520d452924",
-            "technology" :"https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=ae32cd575a9141edbeb5fe520d452924"
+            "entertainment":"https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=",
+            "health" : "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=",
+            "science" :"https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=",
+            "sports" :"https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=",
+            "technology" :"https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey="
 }
 
     content = None
