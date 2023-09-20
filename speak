@@ -41,7 +41,7 @@ def takeCommand():
 if __name__ == "__main__":
     while True:
         query = takeCommand().lower()
-        if "wake up" in query:
+        if "wake up alice" in query:
             from greetMe import greetMe
             greetMe()
 
@@ -115,7 +115,7 @@ if __name__ == "__main__":
                      volumedown()
                 elif "remember that" in query:
                      rememberMessage = query.replace("remember that","")
-                     rememberMessage = query.replace("elixer","")
+                     rememberMessage = query.replace("alice","")
                      speak("You told me to remember that"+rememberMessage)
                      remember = open("Remember.txt","a")
                      remember.write(rememberMessage)
@@ -179,14 +179,14 @@ if __name__ == "__main__":
                      )
                 elif "open" in query:   #EASY METHOD
                     query = query.replace("open","")
-                    query = query.replace("elixer","")
+                    query = query.replace("alice","")
                     pyautogui.press("super")
                     pyautogui.typewrite(query)
                     pyautogui.sleep(2)
                     pyautogui.press("enter")
                 elif "internet speed" in query:
                     wifi  = speedtest.Speedtest()
-                    upload_net = wifi.upload()/1048576         #Megabyte = 1024*1024 Bytes
+                    upload_net = wifi.upload()/1048576         
                     download_net = wifi.download()/1048576
                     print("Wifi Upload Speed is", upload_net)
                     print("Wifi download speed is ",download_net)
@@ -228,6 +228,6 @@ if __name__ == "__main__":
                     pyautogui.press("enter")
                 elif "translate" in query:
                     from translator import translategl
-                    query = query.replace("elixer","")
+                    query = query.replace("alice","")
                     query = query.replace("translate","")
                     translategl(query)
