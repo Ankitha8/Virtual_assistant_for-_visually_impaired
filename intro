@@ -16,7 +16,7 @@ def play_gif():
     lbl = Label(root)
     lbl.place(x=0,y=0)
     i=0
-    mixer.music.load("D:\Download\km-20230906-1080p-60f-20230916-153800-60843.mp3")
+    mixer.music.load("")
     mixer.music.play()
     
     for img in ImageSequence.Iterator(img):
